@@ -1,6 +1,6 @@
 # Bugs samples
 
-A) **Summary**: The title does not save the options changes when performing this action during "X" game: Main Menu -> Extras Screen.
+### A) **Summary**: The title does not save the options changes when performing this action during "X" game: Main Menu -> Extras Screen.
 
 **Steps to reproduce:**
 1. Boot the title 
@@ -18,9 +18,9 @@ A) **Summary**: The title does not save the options changes when performing this
 **Notes:**
  - The issue does not occur on "Y" game and "Z" game, the title will correctly save the changes made in options menu even after a title restart.
 
+---
 
-
-B) **Summary:** Controller disconnect message is overlapped by button prompts
+### B) **Summary:** Controller disconnect message is overlapped by button prompts
 
 **Steps to reproduce:**
 1. Boot the title
