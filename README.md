@@ -89,7 +89,7 @@ The user should can see the blue button and JavaScript must be changed from "Blo
  3. Choose the right version for your OS and download it.
  4. Install the version you downloaded.
  5. Open SublimeText.
- 6. Copy-Paste to this code:<SCRIPT LANGUAGE = "JavaScript">var today = new Date();</SCRIPT>JavaScript is blocked from browser.<BODY onload = alert(today)>
+ 6. Copy-Paste to this code:<SCRIPT LANGUAGE = "JavaScript">var today = new Date();</SCRIPT>JS is blocked from browser.<BODY onload = alert(today)>
  7. Press CTRL + S.
  8. At the File Name put the name "index.html" and click Save.
  9. Go to the saved file (index.html) and right click on it. 
