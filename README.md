@@ -38,3 +38,23 @@ Controller disconnect message should be dispayed without the buttons overlapping
 
 **Screenshot attached**
 
+---
+
+### C) **Summary:** Certain Gameplay settings made in Front End Menu (Extras) are not kept when transitioning to Gameplay.
+
+**Steps to reproduce:**
+1. Boot the title 
+2. Open "X" game or "Z" game
+3. Enter Extras -> Options -> Select Gameplay and change Combat Difficulty
+4. Go back and start a new campaign mission.
+5. During Gameplay press the OPTIONS button PAUSE Menu -> Go to Options -> Gameplay and verify if the Combat Difficulty change is kept.
+
+**Actual Result:** 
+Please notice that the changes the User made are not correctly kept when transitioning to Gameplay, the title will change  modify the Combat Difficulty to default (initial) settings.
+
+**Expected Result:**
+The settings set up made in the "X" or "Z" Main Menu -> Extra screen must be kept when transitioning to active gameplay.
+
+**Notes:**
+ - The issue does not occur on "Y" game.
+
