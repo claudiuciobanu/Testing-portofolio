@@ -89,11 +89,11 @@ The user should can see the blue button and JavaScript must be changed from "Blo
  3. Choose the right version for your OS and download it.
  4. Install the version you downloaded.
  5. Open SublimeText.
- 6. Copy-Paste to this code:<FORM><INPUT TYPE="text" VALUE= "JS is ok!" NAME = "button"onChange= "alert('Please don't change the settings')"></FORM>
+ 6. Copy-Paste to this code:<FORM><INPUT TYPE="text" VALUE= "Settings are ok!" NAME = "button"onChange= "alert('Please do not change the settings')"></FORM>
  7. Press CTRL + S.
  8. At the File Name put the name "index.html" and click Save.
  9. Go to the saved file (index.html) and right click on it. 
 10. Open with Google Chrome.
 
 **Expected results:**
-The user should receive an informative message with the date and the time from that day.
+The user should receive an informative field that the JavaScript runs.
