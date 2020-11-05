@@ -76,3 +76,28 @@ The settings set up made in the "X" or "Z" Main Menu -> Extra screen must be kep
 
 **Expected results:**
 The user should can see the blue button and JavaScript must be changed from "Blocked" to "Allowed".
+
+---
+
+### B) **Test Case title:** Testing JavaScript on browser
+
+**Summary:** Checking if JavaScript runs after the settings from browser are set correctly.
+
+**Steps to reproduction:**
+ 1. Go to "www.sublimetext.com".
+ 2. Go to Download.
+ 3. Choose the right version for your OS and download it.
+ 4. Install the version you downloaded.
+ 5. Open SublimeText.
+ 6. Copy-Paste to this code: <SCRIPT LANGUAGE = "JavaScript">
+                                              var today = new Date();
+                                              </SCRIPT>
+                                               JavaScript is blocked from browser.
+                                               <BODY onload = alert(today)>
+ 7. Press CTRL + S.
+ 8. At the File Name put the name "index.html" and click Save.
+ 9. Go to the saved file (index.html) and right click on it. 
+10. Open with Google Chrome.
+
+**Expected results:**
+The user should receive an informative message with the date and the time from that day.
