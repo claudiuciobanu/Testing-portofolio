@@ -61,3 +61,18 @@ The settings set up made in the "X" or "Z" Main Menu -> Extra screen must be kep
 ---
 
 # Test Cases Samples
+
+### A) **Test Case title:** Set JavaScript on Google Chrome
+
+**Summary:** Configure correctly JavaScript settings on the  Google Chrome browser.
+
+**Steps to reproduction:**
+ 1. Install Google Chrome.
+ 2. On your computer. open Google Chrome.
+ 3. At the top right, click "Customize and control Google Chrome" (the three points vertically).
+ 4. Click Privacy and Security.
+ 5. Click Site settings and go bottom to the Content.
+ 6. Click to JavaScript and click the button from the right (on the same line with "Blocked").
+
+**Expected results:**
+The user should can see the blue button and JavaScript must be changed from "Blocked" to "Allowed".
