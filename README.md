@@ -58,3 +58,6 @@ The settings set up made in the "X" or "Z" Main Menu -> Extra screen must be kep
 **Notes:**
  - The issue does not occur on "Y" game.
 
+---
+
+# Test Cases Samples
