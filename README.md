@@ -139,6 +139,7 @@ pm.test("Response time is less than 200ms", () => {
 pm.test("Test data type", () => {
 
    pm.expect(pm.response.json().sys.id).to.be.a("number");
+
 });
 
     //testing if weather[0].description has the value "clear sky" and if weather.find is an object
@@ -147,7 +148,10 @@ const jsonData = pm.response.json();
 pm.test("Test array properties", () =>{
 
    pm.expect(jsonData.weather[0].description).to.include("clear sky");
+
    const cloudsWeather = jsonData.weather.find
+
         (m => m.main === "Clear");
+
    pm.expect(cloudsWeather).to.be.an("object");
 });
