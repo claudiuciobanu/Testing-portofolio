@@ -133,6 +133,7 @@ pm.test("Testing response size for main", ()=>{
 pm.test("Response time is less than 200ms", () => {
 
    pm.expect(pm.response.responseTime).to.be.below(200);
+
 });
 
     //testing if sys.id result from the response is a number
@@ -151,7 +152,7 @@ pm.test("Test array properties", () =>{
 
    const cloudsWeather = jsonData.weather.find
 
-        (m => m.main === "Clear");
+   (m => m.main === "Clear");
 
    pm.expect(cloudsWeather).to.be.an("object");
 });
