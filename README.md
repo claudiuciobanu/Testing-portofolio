@@ -97,3 +97,23 @@ The user should can see the blue button and JavaScript must be changed from "Blo
 
 **Expected results:**
 The user should receive an informative field that the settings are ok and JavaScript runs.
+
+---
+
+# Postman tests
+
+### A) Testing status and response data
+
+     //testing status
+pm.test("Status test", ()=>{
+    pm.response.to.have.status(200);
+})
+// testing if the response for "q" key is equal to Targoviste
+const jsonResponse = pm.response.json();
+console.log(jsonResponse.weather[0].main);
+pm.test("Testing response for town", () => {
+   pm.expect(jsonResponse.name).to.eql("Târgoviște");
+});
+pm.test("Testing response size for main", ()=>{
+    pm.expect(jsonResponse.weather[0].main).to.equal("Rain");
+})
