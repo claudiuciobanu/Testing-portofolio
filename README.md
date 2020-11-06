@@ -96,4 +96,4 @@ The user should can see the blue button and JavaScript must be changed from "Blo
 10. Open with Google Chrome.
 
 **Expected results:**
-The user should receive an informative field that the JavaScript runs.
+The user should receive an informative field that the settings are ok and JavaScript runs.
