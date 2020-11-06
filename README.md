@@ -106,8 +106,11 @@ The user should receive an informative field that the settings are ok and JavaSc
 
      //testing status
 pm.test("Status test", ()=>{
+
 pm.response.to.have.status(200);
+
 })
+
 // testing if the response for "q" key is equal to Targoviste
 const jsonResponse = pm.response.json();
 console.log(jsonResponse.weather[0].main);
