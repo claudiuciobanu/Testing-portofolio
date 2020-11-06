@@ -122,7 +122,7 @@ pm.expect(jsonResponse.name).to.eql("Târgoviște");
 
 });
 
-//testing if the weather[0].main is equal to "Rain"
+//testing if the weather
 
 pm.test("Testing response size for main", ()=>{
 
