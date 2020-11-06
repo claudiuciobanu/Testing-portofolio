@@ -111,7 +111,7 @@ pm.response.to.have.status(200);
 
 });
 
-// testing if the response for "q" key is equal to Targoviste
+//testing if the response for "q" key is equal to Targoviste
 const jsonResponse = pm.response.json();
 
 console.log(jsonResponse.weather[0].main);
@@ -121,6 +121,8 @@ pm.test("Testing response for town", () => {
 pm.expect(jsonResponse.name).to.eql("Târgoviște");
 
 });
+
+//testing if the weather[0].main is equal to "Rain"
 
 pm.test("Testing response size for main", ()=>{
 
