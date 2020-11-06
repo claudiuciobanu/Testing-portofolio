@@ -155,4 +155,5 @@ pm.test("Test array properties", () =>{
    (m => m.main === "Clear");
 
    pm.expect(cloudsWeather).to.be.an("object");
+
 });
