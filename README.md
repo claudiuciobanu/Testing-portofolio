@@ -116,14 +116,14 @@ const jsonResponse = pm.response.json();
 
 pm.test("Testing response for town", () => {
 
-    pm.expect(jsonResponse.name).to.eql("Târgoviște");
+   pm.expect(jsonResponse.name).to.eql("Târgoviște");
 
 });
 
-    /*testing if the weather[0].main is equal to "Rain"*/
+    //testing if the weather[0].main is equal to "Rain"
 pm.test("Testing response size for main", ()=>{
 
-    pm.expect(jsonResponse.weather[0].main).to.equal("Rain");
+   pm.expect(jsonResponse.weather[0].main).to.equal("Rain");
 
 });
 
@@ -132,13 +132,13 @@ pm.test("Testing response size for main", ()=>{
     //testing the response time
 pm.test("Response time is less than 200ms", () => {
 
-    pm.expect(pm.response.responseTime).to.be.below(200);
+   pm.expect(pm.response.responseTime).to.be.below(200);
 });
 
     //testing if sys.id result from the response is a number
 pm.test("Test data type", () => {
 
-    pm.expect(pm.response.json().sys.id).to.be.a("number");
+   pm.expect(pm.response.json().sys.id).to.be.a("number");
 });
 
     //testing if weather[0].description has the value "clear sky" and if weather.find is an object
@@ -146,8 +146,8 @@ const jsonData = pm.response.json();
 
 pm.test("Test array properties", () =>{
 
-    pm.expect(jsonData.weather[0].description).to.include("clear sky");
-    const cloudsWeather = jsonData.weather.find
+   pm.expect(jsonData.weather[0].description).to.include("clear sky");
+   const cloudsWeather = jsonData.weather.find
         (m => m.main === "Clear");
-    pm.expect(cloudsWeather).to.be.an("object");
+   pm.expect(cloudsWeather).to.be.an("object");
 });
