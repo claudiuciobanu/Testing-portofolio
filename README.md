@@ -106,14 +106,14 @@ The user should receive an informative field that the settings are ok and JavaSc
 
      //testing status
 pm.test("Status test", ()=>{
-    pm.response.to.have.status(200);
+pm.response.to.have.status(200);
 })
 // testing if the response for "q" key is equal to Targoviste
 const jsonResponse = pm.response.json();
 console.log(jsonResponse.weather[0].main);
 pm.test("Testing response for town", () => {
-   pm.expect(jsonResponse.name).to.eql("Târgoviște");
+pm.expect(jsonResponse.name).to.eql("Târgoviște");
 });
 pm.test("Testing response size for main", ()=>{
-    pm.expect(jsonResponse.weather[0].main).to.equal("Rain");
+pm.expect(jsonResponse.weather[0].main).to.equal("Rain");
 })
