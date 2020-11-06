@@ -118,13 +118,13 @@ console.log(jsonResponse.weather[0].main);
 
 pm.test("Testing response for town", () => {
 
-  pm.expect(jsonResponse.name).to.eql("Târgoviște");
+   pm.expect(jsonResponse.name).to.eql("Târgoviște");
 
 });
 
     //testing if the weather[0].main is equal to "Rain"
 pm.test("Testing response size for main", ()=>{
 
-  pm.expect(jsonResponse.weather[0].main).to.equal("Rain");
+   pm.expect(jsonResponse.weather[0].main).to.equal("Rain");
 
 });
