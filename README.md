@@ -107,7 +107,7 @@ The user should receive an informative field that the settings are ok and JavaSc
      //testing status
 pm.test("Status test", ()=>{
 
-         pm.response.to.have.status(200);
+   pm.response.to.have.status(200);
 
 });
 
@@ -125,4 +125,23 @@ pm.test("Testing response size for main", ()=>{
 
    pm.expect(jsonResponse.weather[0].main).to.equal("Rain");
 
+});
+
+### B) Testing response time and data type
+
+//testing the response time
+pm.test("Response time is less than 200ms", () => {
+    pm.expect(pm.response.responseTime).to.be.below(200);
+});
+//testing if sys.id result from the response is a number
+pm.test("Test data type", () => {
+    pm.expect(pm.response.json().sys.id).to.be.a("number");
+});
+//testing if weather[0].description has the value "clear sky" and if weather.find is an object
+const jsonData = pm.response.json();
+pm.test("Test array properties", () =>{
+    pm.expect(jsonData.weather[0].description).to.include("clear sky");
+    const cloudsWeather = jsonData.weather.find
+        (m => m.main === "Clear");
+    pm.expect(cloudsWeather).to.be.an("object");
 });
