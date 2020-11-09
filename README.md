@@ -148,7 +148,7 @@ const jsonData = pm.response.json();
 
 pm.test("Test array properties", () =>{
 
-   pm.expect(jsonData.weather[0].description).to.include("clear sky");
+   &nbsp;&nbsp;&nbsp; pm.expect(jsonData.weather[0].description).to.include("clear sky");
 
    const cloudsWeather = jsonData.weather.find
 
