@@ -107,7 +107,7 @@ The user should receive an informative field that the settings are ok and JavaSc
      //testing status
 pm.test("Status test", ()=>{
 
-   pm.response.to.have.status(200);
+ &nbsp;&nbsp;&nbsp;  pm.response.to.have.status(200);
 
 });
 
@@ -116,14 +116,14 @@ const jsonResponse = pm.response.json();
 
 pm.test("Testing response for town", () => {
 
-   pm.expect(jsonResponse.name).to.eql("Târgoviște");
+  &nbsp;&nbsp;&nbsp; pm.expect(jsonResponse.name).to.eql("Târgoviște");
 
 });
 
     //testing if the weather[0].main is equal to "Rain"
 pm.test("Testing response size for main", ()=>{
 
-   pm.expect(jsonResponse.weather[0].main).to.equal("Rain");
+  &nbsp;&nbsp;&nbsp; pm.expect(jsonResponse.weather[0].main).to.equal("Rain");
 
 });
 
@@ -132,14 +132,14 @@ pm.test("Testing response size for main", ()=>{
     //testing the response time
 pm.test("Response time is less than 200ms", () => {
 
-   pm.expect(pm.response.responseTime).to.be.below(200);
+  &nbsp;&nbsp;&nbsp; pm.expect(pm.response.responseTime).to.be.below(200);
 
 });
 
     //testing if sys.id result from the response is a number
 pm.test("Test data type", () => {
 
-   pm.expect(pm.response.json().sys.id).to.be.a("number");
+  &nbsp;&nbsp;&nbsp; pm.expect(pm.response.json().sys.id).to.be.a("number");
 
 });
 
@@ -150,10 +150,10 @@ pm.test("Test array properties", () =>{
 
    &nbsp;&nbsp;&nbsp; pm.expect(jsonData.weather[0].description).to.include("clear sky");
 
-   const cloudsWeather = jsonData.weather.find
+   &nbsp;&nbsp;&nbsp;const cloudsWeather = jsonData.weather.find
 
-   (m => m.main === "Clear");
+  &nbsp;&nbsp;&nbsp; (m => m.main === "Clear");
 
-   pm.expect(cloudsWeather).to.be.an("object");
+  &nbsp;&nbsp;&nbsp; pm.expect(cloudsWeather).to.be.an("object");
 
 });
