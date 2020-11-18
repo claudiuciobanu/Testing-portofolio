@@ -5,7 +5,7 @@
 **Steps to reproduce:**
 1. Boot the title 
 2. Open "X" game  and pass the IIS
-3. Notice that GamerProfile save data will be created. (Press PS button -> Highlight the title -> Press "OPTIONS" button -> Select Save Data Management -> Delete -> METR and check that the game profile save data is present. )
+3. Notice that GamerProfile save data will be created. (Press PS button -> Highlight the title -> Press "OPTIONS" button -> Select Save Data Management -> Delete -> METR and check that the game profile save data is present.)
 4. Enter Extras -> Options -> Select any submenu and make the necessary change
 5. Select Confirm Selections and Exit
 6. Notice that the title will inform the use that "Saving data do not turn off your system".
